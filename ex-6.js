@@ -1,7 +1,11 @@
 let favoriteBooks = [];
 
 function addFavoriteBook(bookName) {
-  // Start coding here !
+  if (bookName.includes("Beauty")) {
+    favoriteBooks.push(bookName);
+  } else {
+    return `The title of the book doesn't include the word "Beauty."`;
+  }
 }
 
 // Example case
